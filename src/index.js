@@ -18,6 +18,7 @@ ReactDOM.render(
       aluno="Maria"
       nota={8.9}
     />
+    <Fragment />
   </div>,
   document.getElementById("root")
 );
