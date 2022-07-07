@@ -8,13 +8,18 @@ import Fragment from "./components/basic/Fragment";
 import Random from "./components/basic/Random";
 import Card from "./components/layout/Card";
 import Family from "./components/basic/Family";
+import FamilyMember from "./components/basic/FamilyMember";
 
 export default () => (
 	<div className="App">
 		<h1>Fundamentos React</h1>
 		<div className="Cards">
-			<Card title="#05 - Component whit childrens" color="#00C8F8">
-				<Family lastName="Ferreira" />
+			<Card title="#05 - Component with childrens" color="#00C8F8">
+				<Family lastName="Ferreira">
+					<FamilyMember name="Pedro" />
+					<FamilyMember name="José" {...props} />
+					<FamilyMember name="Bia" lastName="Silva" />
+				</Family>
 			</Card>
 			<Card title="#04 - Random challenge" color="#FA6900">
 				<Random max={100} min={10} />
