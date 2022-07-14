@@ -1,0 +1,11 @@
+.ItemsTable table{
+    width: 100%;
+}
+
+.ItemsTable th{
+    background-color: #008;
+}
+
+.ItemsTable .Grey{
+    background-color: grey;
+}
