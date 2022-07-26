@@ -11,15 +11,28 @@ import Family from "./components/basic/Family";
 import FamilyMember from "./components/basic/FamilyMember";
 import StudentsList from "./components/repetitions/StudentsList";
 import ItemsList from "./components/repetitions/ItemsList";
+import ParOrImpar from "./components/conditions/ParOrImpar";
+import UserInfo from "./components/conditions/UserInfo";
+import DirectFather from "./components/comunication/DirectFather";
+import IndirectFather from "./components/comunication/IndirectFather";
 
 export default () => (
 	<div className="App">
 		<h1>Fundamentos React</h1>
 		<div className="Cards">
+		<Card title="#10 - Indirect Communication" color="#8BAD39">
+				<IndirectFather></IndirectFather>
+			</Card>
+			<Card title="#09 - Direct Communication" color="#59323C">
+				<DirectFather></DirectFather>
+			</Card>
+			<Card title="#08 - Conditional Render" color="#982395">
+				<ParOrImpar number={19}></ParOrImpar>
+				<UserInfo user={{ name: "Neto" }}></UserInfo>
+				<UserInfo user={{ email: "zeneto2604@gmail.com" }}></UserInfo>
+			</Card>
 			<Card title="#07 - Repetition challenge" color="#080">
-				<ItemsList>
-
-				</ItemsList>
+				<ItemsList></ItemsList>
 			</Card>
 			<Card title="#06 - Repetition" color="#FF4C65">
 				<StudentsList></StudentsList>
