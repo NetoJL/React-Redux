@@ -13,18 +13,6 @@ export default (props) => {
 		);
 	});
 
-	/*function getLines() {
-		return items.map((item) => {
-			return (
-				<tr>
-					<td>{item.id}</td>
-					<td>{item.name}</td>
-					<td>R${item.price}</td>
-				</tr>
-			);
-		});
-	}*/
-
 	return (
 		<div className="ItemsTable">
 			<table>
