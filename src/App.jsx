@@ -16,12 +16,16 @@ import UserInfo from "./components/conditions/UserInfo";
 import DirectFather from "./components/comunication/DirectFather";
 import IndirectFather from "./components/comunication/IndirectFather";
 import Input from "./components/forms/Input";
+import Counter from './components/counter/Counter'
 
 export default () => (
 	<div className="App">
 		<h1>Fundamentos React</h1>
 		<div className="Cards">
-		<Card title="#11 - Controlled component" color="#E45F56">
+			<Card title="#12 - Counter" color="#424242">
+				<Counter initialNumber={10}></Counter>
+			</Card>
+			<Card title="#11 - Controlled component" color="#E45F56">
 				<Input></Input>
 			</Card>
 			<Card title="#10 - Indirect Communication" color="#8BAD39">
