@@ -23,7 +23,7 @@ export default () => (
 		<h1>Fundamentos React</h1>
 		<div className="Cards">
 			<Card title="#12 - Counter" color="#424242">
-				<Counter initialNumber={10}></Counter>
+				<Counter initialNumber={100}></Counter>
 			</Card>
 			<Card title="#11 - Controlled component" color="#E45F56">
 				<Input></Input>
